@@ -25,21 +25,16 @@ export default function Comments({ publicationId }: CommentsProps) {
 
   useEffect(() => {
     const fetchComments = async () => {
-      try {
         setLoading(true);
-
         const response = await getAllComments();
-
         const filteredComments = response.filter(
           (comment: Comment) => comment.publicationId === publicationId,
         );
 
         setComments(filteredComments);
-      } catch (error) {
-        console.error(error);
-      } finally {
+
         setLoading(false);
-      }
+
     };
 
     fetchComments();

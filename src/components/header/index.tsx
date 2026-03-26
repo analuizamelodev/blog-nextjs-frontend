@@ -13,6 +13,9 @@ export default function Header() {
 
         <nav>
           <ul className="flex gap-6">
+            <li className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center text-xs font-semibold text-gray-600">
+              {user?.name ? user.name.charAt(0) : "U"}
+            </li>
             <li>
               <Link href="/perfil" className="hover:text-gray-400 transition">
                 {user?.name || "Perfil"}
