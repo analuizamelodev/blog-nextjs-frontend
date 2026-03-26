@@ -26,7 +26,7 @@ export default function CreatePublication({
   };
 
   return (
-    <div className="w-full bg-white border border-gray-200 p-5 rounded-2xl shadow-sm font-sans">
+    <div className="max-w-2xl mx-auto bg-white border border-gray-200 px-4 py-3 gap-6 flex flex-col rounded-2xl shadow-sm font-sans">
       <div className="flex gap-4">
         <div>
           <div className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center text-xs font-semibold text-gray-600">

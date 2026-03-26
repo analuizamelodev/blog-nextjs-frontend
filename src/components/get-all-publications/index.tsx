@@ -22,14 +22,12 @@ export default function Publications({
 }) {
   const [openComments, setOpenComments] = useState<number | null>(null);
 
-  // MÁGICA AQUI: Ordena as publicações da mais nova para a mais antiga
   const sortedPublications = [...publications].sort((a, b) => {
     return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
   });
 
   return (
     <div className="max-w-2xl mx-auto flex flex-col gap-6 px-4">
-      {/* Usamos sortedPublications em vez de publications */}
       {sortedPublications.map((publication) => (
         <div
           key={publication.id}
@@ -68,12 +66,12 @@ export default function Publications({
               className="text-gray-500 font-medium hover:text-purple-600 transition-colors"
             >
               {openComments === publication.id
-                ? "Fechar comentários"
-                : "Abrir comentários"}
+                ? "close comments"
+                : "open comments"}
             </button>
 
             <span>
-              Atualizado em{" "}
+              Updated on{" "}
               {new Date(publication.updatedAt).toLocaleDateString("pt-BR")}
             </span>
           </div>
