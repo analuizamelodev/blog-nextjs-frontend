@@ -13,3 +13,11 @@ export const createPublication = async (title: string, content: string) => {
   });
   return response.data;
 };
+
+export const updateByIdPublication = async (id: number, title: string, content: string) => {
+  const response = await apiClient.put(`/publication/${id}`, {
+    title,
+    content,
+  });
+  return response.data; 
+};
