@@ -19,10 +19,10 @@ export default function CreatePublication({
     if (!content.trim() || !title.trim()) return;
     setLoading(true);
     const response = await createPublication(title, content);
-      setTitle("");
-      setContent("");
-      onCreate();
-      setLoading(false);
+    setTitle("");
+    setContent("");
+    onCreate();
+    setLoading(false);
   };
 
   return (
@@ -30,7 +30,7 @@ export default function CreatePublication({
       <div className="flex gap-4">
         <div>
           <div className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center text-xs font-semibold text-gray-600">
-              {user?.name ? user.name.charAt(0) : "U"}
+            {user?.name ? user.name.charAt(0) : "U"}
           </div>
         </div>
         <form onSubmit={handleSubmit} className="flex-1">
@@ -45,7 +45,7 @@ export default function CreatePublication({
             value={content}
             onChange={(e) => setContent(e.target.value)}
             placeholder="What are you thinking?"
-            className="w-full bg-transparent text-base outline-none resize-none placeholder-gray-400 min-h-[80px]"
+            className="w-full bg-transparent text-base outline-none resize-none placeholder-gray-400 min-h-80px"
           />
           <div className="flex items-center justify-between">
             <div className="flex gap-4 text-gray-500 text-sm">
