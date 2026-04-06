@@ -16,3 +16,7 @@ export const createComment = async (
 
   return response.data;
 };
+
+export const deleteByIdComment = async (id: number) => {
+  await apiClient.delete(`/comment/${id}`);
+};

@@ -21,3 +21,7 @@ export const updateByIdPublication = async (id: number, title: string, content: 
   });
   return response.data; 
 };
+
+export const deleteByIdPublication = async (id: number) => {
+  await apiClient.delete(`/publication/${id}`);
+};

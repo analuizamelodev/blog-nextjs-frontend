@@ -24,13 +24,15 @@ export default function PostsPage() {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col ">
       <Header />
-      <SearchUsers />
-      <br />
-      <CreatePublication onCreate={fetchPublications} />
-      <br />
-      <Publications publications={publications} />
+      <div className="flex flex-col space-y-4 mt-4 container mx-auto px-4 max-w-6/12">
+
+        <SearchUsers />
+        <CreatePublication onCreate={fetchPublications} />
+        <Publications publications={publications} />
+      </div>
+
     </div>
   );
 }

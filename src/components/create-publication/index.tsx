@@ -26,10 +26,10 @@ export default function CreatePublication({
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-white border border-gray-200 px-4 py-3 gap-6 flex flex-col rounded-2xl shadow-sm font-sans">
+    <div className="px-4 mx-auto w-full bg-black border border-purple-900  py-3 gap-6 flex flex-col rounded-2xl shadow-sm font-sans">
       <div className="flex gap-4">
         <div>
-          <div className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center text-xs font-semibold text-gray-600">
+          <div className="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-xs font-semibold text-white shrink-0">
             {user?.name ? user.name.charAt(0) : "U"}
           </div>
         </div>
@@ -39,16 +39,16 @@ export default function CreatePublication({
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Title"
-            className="w-full bg-transparent text-xl font-semibold outline-none mb-1 placeholder-gray-400"
+            className="w-full bg-transparent text-xl font-semibold outline-none mb-1 placeholder-white text-white"
           />
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
             placeholder="What are you thinking?"
-            className="w-full bg-transparent text-base outline-none resize-none placeholder-gray-400 min-h-80px"
+            className="w-full bg-transparent text-base outline-none resize-none placeholder-white text-white min-h-80px"
           />
           <div className="flex items-center justify-between">
-            <div className="flex gap-4 text-gray-500 text-sm">
+            <div className="flex gap-4 text-white text-sm">
             </div>
             <button
               type="submit"

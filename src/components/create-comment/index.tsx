@@ -40,7 +40,7 @@ export default function CreateComment({
 
   return (
     <form onSubmit={handleSubmit} className="flex items-start gap-3 mb-4">
-      <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-sm font-semibold text-gray-700">
+      <div className="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-xs font-semibold text-white shrink-0">
         {user?.name?.charAt(0)?.toUpperCase() || "U"}
       </div>
 
@@ -51,7 +51,7 @@ export default function CreateComment({
           onChange={(e) => setContent(e.target.value)}
           onFocus={() => setFocused(true)}
           placeholder="Post your reply"
-          className="w-full bg-transparent outline-none text-sm text-gray-800 placeholder-gray-400"
+          className="w-full bg-transparent outline-none text-sm text-white placeholder-white"
         />
 
         {focused && (
@@ -59,7 +59,7 @@ export default function CreateComment({
             <button
               type="submit"
               disabled={loading || !content.trim()}
-              className="bg-gray-800 text-white px-4 py-1.5 rounded-full text-sm hover:bg-black disabled:bg-gray-300"
+              className="bg-purple-600 hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold px-5 py-2 rounded-full transition-all duration-200 shadow-sm hover:shadow-md"
             >
               {loading ? "Posting..." : "Reply"}
             </button>
