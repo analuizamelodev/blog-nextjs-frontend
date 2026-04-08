@@ -6,32 +6,51 @@ A full-featured blog platform built with Next.js, offering authentication, conte
 
 This project is a blog application developed using modern web technologies, focusing on user experience, performance, and real-world application features.
 
-Users can create accounts, log in, publish posts, interact through comments, and manage their own content — simulating a complete blog ecosystem.
+Users can create accounts, log in, publish posts, interact through comments, and manage their own content.
 
 ## Features
+
 ### Authentication System
-User login and registration
-Secure access to protected routes
+
+<ul>  
+<li>User login and registration</li>
+<li>Secure access to protected routes</li>
+</ul>
+
 ### Post Management
-Create new blog posts
-Edit existing posts
-Delete posts
-View all publications
-Comments System
-Users can comment on posts
-Interaction between users
+
+<ul> 
+<li>Create new blog posts</li>
+<li>Edit existing posts</li>
+<li>Delete posts</li>
+<li>View all publications</li>
+</ul>
+  
+### Comments System
+
+<ul> 
+<li>Users can comment on posts</li>
+<li>Interaction between users</li>
+<li>Delete comments</li>
+</ul>
+
 ### User Profile
-Access personal profile
-View user-related content
-### Responsive Design
-Optimized for mobile and desktop
+
+<ul> 
+<li>Access personal profile</li>
+<li>View user-related content</li>
+</ul>
+  
 ### Technologies Used
-Next.js
-React
-JavaScript / TypeScript
-HTML5 & CSS3
-Tailwind CSS (if applicable)
-Git & GitHub
+<ul>
+<li>Next.js</li>
+<li>React</li>
+<li>JavaScript / TypeScript</li>
+<li>HTML5 & CSS3</li>
+<li>Tailwind CSS (if applicable)</li>
+<li>Git & GitHub</li>
+</ul>
+
 ## Project Structure
 
 ```
