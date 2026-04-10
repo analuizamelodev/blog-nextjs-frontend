@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BLOG NEXTJS FRONTEND
 
-## Getting Started
+A full-featured blog platform built with Next.js, offering authentication, content management, and user interaction.
 
-First, run the development server:
+## About the Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project is a blog application developed using modern web technologies, focusing on user experience, performance, and real-world application features.
+
+Users can create accounts, log in, publish posts, interact through comments, and manage their own content.
+
+## Features
+
+### Authentication System
+
+<ul>  
+<li>User login and registration</li>
+<li>Secure access to protected routes</li>
+</ul>
+
+### Post Management
+
+<ul> 
+<li>Create new blog posts</li>
+<li>Edit existing posts</li>
+<li>Delete posts</li>
+<li>View all publications</li>
+</ul>
+  
+### Comments System
+
+<ul> 
+<li>Users can comment on posts</li>
+<li>Interaction between users</li>
+<li>Delete comments</li>
+</ul>
+
+### User Profile
+
+<ul> 
+<li>Access personal profile</li>
+<li>View user-related content</li>
+</ul>
+  
+### Technologies Used
+<ul>
+<li>Next.js</li>
+<li>React</li>
+<li>JavaScript / TypeScript</li>
+<li>HTML5 & CSS3</li>
+<li>Tailwind CSS (if applicable)</li>
+<li>Git & GitHub</li>
+</ul>
+
+## Project Structure
+
+```
+/src
+  /components
+  /app or /pages
+  /services
+  /styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting Started
+### Prerequisites
+Node.js
+npm or yarn
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+# Clone the repository
+git clone https://github.com/analuizamelodev/projeto-next.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Navigate to the project folder
+cd projeto-next
 
-## Learn More
+# Install dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Run the development server
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Access the application at:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+http://localhost:3001
+```
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed by Ana Luiza Melo
+GitHub: https://github.com/analuizamelodev
