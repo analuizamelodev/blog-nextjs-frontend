@@ -17,7 +17,6 @@ export default function ProfileCard() {
                 <div className="space-y-3">
                     <div>
                         <h2 className="text-xl font-bold leading-tight">{user?.name || "Nome do Usuário"}</h2>
-                        <p className="text-zinc-500 text-sm">@{user?.name?.toLowerCase().replace(/\s/g, "") || "user"}</p>
                     </div>
                 </div>
             </div>
